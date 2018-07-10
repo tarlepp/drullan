@@ -2,12 +2,12 @@
 
 namespace App\Controller;
 
-use App\Repository\FooBarRepository;
+use App\Some\Service;
 
 class DefaultController
 {
-    public function YourAction(FooBarRepository $repository)
+    public function YourAction(Service $service)
     {
-        // now you have your entity repository here as in $repository
+        $service->doStuff();
     }
 }
